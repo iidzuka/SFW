@@ -1,10 +1,15 @@
+var webpack = require('webpack');
+var path = require('path');
 module.exports = {
   entry: {
-    app: './source/js/*.js'
+    app: './source/js/main.js'
   },
   output: {
-    path: './source/javascript',
+    path: './source/javascripts',
     filename: 'all.js'
+  },
+  resolve: {
+    root: [path.resolve('./source/js')]
   }
 };
 
